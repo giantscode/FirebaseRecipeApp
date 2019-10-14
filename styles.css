@@ -1,0 +1,41 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: url("img.jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    }
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+h1 span {
+    color: #F5820C;
+}
+
+div.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    padding: 2rem;
+    border: solid 2px black;
+    border-radius: 10px;
+    background: #F5820C;
+}
+/*Input Box Button 'add'*/
+[value~=add] {
+    background: black;
+    color:white;
+}
+
+.stop-live {
+    max-width: 50%;
+    align-self: center;
+}

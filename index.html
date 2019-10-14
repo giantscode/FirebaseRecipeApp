@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Firebase App 1</title>
+    
+</head>
+<body>
+    <h1><span>Firebase</span> Recipe App</h1>
+
+    <div class="container my-5">
+        <h2>Recipes</h2>
+        <ul>
+            
+        </ul>
+        <form>
+            <label for="recipe">Add a new recipe:</label>
+            <div class="input-group">
+                <input type="text" class="form-control" id="recipe" required>
+                <div class="input-group-append">
+                    <input type="submit" value="add" class="btn btn-outline-secondary">
+                </div>
+            </div>
+        </form>
+        <button class="stop-live btn btn-primary my-2">Stop Live Updating</button>
+    </div>
+
+
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCuvhH2V08y-2gORxZGWXluaGi15o2k7cA",
+        authDomain: "fir-app1-da400.firebaseapp.com",
+        databaseURL: "https://fir-app1-da400.firebaseio.com",
+        projectId: "fir-app1-da400",
+        storageBucket: "fir-app1-da400.appspot.com",
+        messagingSenderId: "665006023361",
+        appId: "1:665006023361:web:4ea9110e762ced06426a40",
+        measurementId: "G-7KLWJ663CL"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+    const db = firebase.firestore();//initialize firestore connection
+
+    console.log(db);
+
+    </script>
+    <!--My Script:-->
+    <script src="app.js"></script>
+</body>
+</html>
