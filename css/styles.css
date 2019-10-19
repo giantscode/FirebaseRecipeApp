@@ -3,7 +3,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background: url("img.jpeg") no-repeat center center fixed;
+    background: url("../images/recipebg.jpeg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

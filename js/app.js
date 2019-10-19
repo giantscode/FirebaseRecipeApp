@@ -1,10 +1,11 @@
+const moment = require('moment'); //grab momentJS
 
 const list = document.querySelector(`ul`);
 const form = document.querySelector(`form`);
 const stopButton = document.querySelector(`.stop-live`);
 
 const addRecipe = (recipe, id) => {
-    let time = recipe.created_at.toDate();
+    let time = moment(recipe.created_at.toDate()).format('MMMM Do YYYY, h:mm:ss a');
     let html = `
         <li data-id="${id}">
             <div>
