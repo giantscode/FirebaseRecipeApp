@@ -27,7 +27,7 @@ const deleteRecipe = (id) => {
             recipe.remove();
         }
     });
-}
+};
 
 //Reference db from firebase script in index.html:
 //Get documents (live):
@@ -42,7 +42,7 @@ const stopLive = db.collection(`recipes`).onSnapshot(snapshot => {
         else if (change.type === `removed`) {
             deleteRecipe(doc.id);
         }
-    })
+    });
 });
 
 
